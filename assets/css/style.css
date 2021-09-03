@@ -21,13 +21,12 @@ body::before {
 
 body {
     display: block;
-    border: 16px ridge rgb(59, 59, 59);
 }
 
 #main {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
 }
 
@@ -35,11 +34,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
-    text-align: center;
-    padding: 2rem;
     margin: 2rem;
-    opacity: 1.0;
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
 }
 
 #title {
@@ -54,9 +52,11 @@ body {
     margin-top: 3rem;
 }
 
+/* Responsible for the glassmorphism effect on the font container */
+
 form {
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     height: 100%;
     margin: 0 2rem 4rem 2rem;
@@ -82,7 +82,7 @@ label, form p {
 input, textarea, select {
     border-radius: 5px;
     border: 1px solid lightgray;
-    padding: 10px;
+    padding: 16px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -113,3 +113,77 @@ input, textarea, select {
     transition: 0.5s ease-in-out;
 }
 
+
+/* Responsive styling across tablets and mobile devices */
+
+@media screen and (max-width: 768px) {
+
+    #heading-container {
+        width: 90%;
+        margin: 0;
+    }
+
+    #title {
+        font-size: 64px;
+    }
+
+    #description {
+        font-size: 24px;
+    }
+
+    form {
+        width: 85%;
+        padding: 2rem 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    #title {
+        font-size: 48px;
+    }
+
+    #description {
+        font-size: 20px;
+    }
+
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    label, form p {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 300px) {
+
+    #heading-container {
+        width: 98%;
+    }
+
+    #title {
+        font-size: 42px;
+    }
+
+    #description {
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+
+    label, form p {
+        font-size: 16px;
+    }
+
+    input, textarea, select, .label-custom {
+        font-size: 12px;
+    }
+
+    #submit {
+        font-size: 48px;
+    }
+    
+}
