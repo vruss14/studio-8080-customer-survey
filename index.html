@@ -27,6 +27,110 @@
         <link rel="shortcut icon" type="image/jpg" href="./assets/images/shirt-pngrepo-com.png"/>
     </head>
 <body>
+
+    <main id="main">
+        <div id="heading-container">
+            <h1 id="title">Studio 8080 Clothing Co. Customer Survey</h1>
+            <h2 id="description">Your valuable feedback helps to ensure all
+                of our customers have the best possible experience. Thank you for your time!
+            </h2>
+        </div>
+
+        <form id="survey-form">
+
+            <div class="input-container">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your first and last name..." required />
+            </div>
+
+            <div class="input-container">
+                <label id="email-label" for="email">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email..." required />
+            </div>
+
+            <div class="input-container">
+                <label id="number-label" for="number">On a scale of 1–10, with 10 being the most satisfied, how satisfied are you with Studio 8080?</label>
+                <input type="number" name="number" id="number" class="form-control" min="1" max="10" placeholder="Please rate our services..." required />
+            </div>
+
+            <div class="input-container">
+                <p>How did you first hear about Studio 8080?</p>
+                <select id="dropdown" name="marketing" class="form-control" required>
+                    <option disabled selected value>Choose one answer...</option>
+                    <option value="search-engine">Search Engine (Google, Yahoo, etc)</option>
+                    <option value="online-ad">Online Ad</option>
+                    <option value="recommendation">Recommendation from a friend/colleague</option>
+                    <option value="social-media">Social Media (Facebook, Instagram, etc.)</option>
+                    <option value="blog">Blog</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <p>Would you recommend Studio 8080 to a friend?</p>
+                <label class="label-custom">
+                    <input name="will-recommend" value="definitely" type="radio" class="input-radio" checked> Definitely
+                </label>
+
+                <label class="label-custom">
+                    <input name="will-recommend" value="maybe" type="radio" class="input-radio"> Maybe
+                </label>
+
+                <label class="label-custom">
+                    <input name="will-recommend" value="probably-not" type="radio" class="input-radio"> Probably not
+                </label>
+
+                <label class="label-custom">
+                    <input name="will-recommend" value="definitely-not" type="radio" class="input-radio"> Definitely not
+                </label>
+            </div>
+
+            <div class="input-container">
+                <p>How do you typically hear about new clothing stores?</p>
+
+                <label class="label-custom">
+                    <input name="typically-hear" value="searching" type="checkbox" class="input-checkbox">
+                    Searching the web
+                </label>
+
+                <label class="label-custom">
+                    <input name="typically-hear" value="online-ads" type="checkbox" class="input-checkbox">
+                    Online ads
+                </label>
+
+                <label class="label-custom">
+                    <input name="typically-hear" value="recommendations" type="checkbox" class="input-checkbox">
+                    Recommendations from family/friends/colleagues
+                </label>
+
+                <label class="label-custom">
+                    <input name="typically-hear" value="social-media" type="checkbox" class="input-checkbox">
+                    Social Media
+                </label>
+
+                <label class="label-custom">
+                    <input name="typically-hear" value="blogs" type="checkbox" class="input-checkbox">
+                    Blogs
+                </label>
+
+                <label class="label-custom">
+                    <input name="typically-hear" value="other" type="checkbox" class="input-checkbox">
+                    Other
+                </label>
+            </div>
+
+            <div class="input-container">
+                <p>Is there anything else you'd like us to know?</p>
+                <textarea id="other-comments" class="input-textarea" name="other-comments" placeholder="Enter any other comments and suggestions you have...."></textarea>
+            </div>
+
+            <div class="input-container">
+                <button type="submit" id="submit" class="submit-button"> Submit </button>
+            </div>
+
+        </form>
+
+    </main>
     
 </body>
 </html>

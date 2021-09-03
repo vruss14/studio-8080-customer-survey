@@ -1,3 +1,115 @@
-h1 {
-    font-family: 'Stalemate', cursive;
+/* Multiple background images result in a tinted background */
+/* Background should not repeat, cover the full viewport, and be centered */
+
+body::before {
+    background: white;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+    ), url("../images/pexels-nataliya-vaitkevich-4641825-original.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
+
+body {
+    display: block;
+    border: 16px ridge rgb(59, 59, 59);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#heading-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    opacity: 1.0;
+}
+
+#title {
+    font-family: 'Stalemate', cursive;
+    font-size: 108px;
+}
+
+#description {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 3rem;
+}
+
+form {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    height: 100%;
+    margin: 0 2rem 4rem 2rem;
+    padding: 3rem 5rem;
+	-webkit-backdrop-filter: blur(10px);
+    width: 75%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+label, form p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+input, textarea, select {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.label-custom {
+    font-size: 18px;
+}
+
+#submit {
+    background-color: rgba(59, 59, 59, 0.5);
+    color: black;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    padding: 1rem 1rem 0 1rem;
+    font-weight: 300;
+    font-family: 'Stalemate', cursive;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit:hover {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
