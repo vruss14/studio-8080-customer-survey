@@ -56,11 +56,11 @@ This page is a simple survey form powered by HTML and CSS. It does not intend to
 
 Below is a screenshot of the desktop version of the deployed page:
 
-![screenshot of webpage for desktop]()
+![screenshot of webpage for desktop](./assets/images/studio-8080-desktop-screenshot.png)
 
 Below is a screenshot of the deployed page on mobile:
 
-![screenshot of webpage for mobile]()
+![screenshot of webpage for mobile](./assets/images/studio-8080-screenshot-mobile.png)
 
 ## Credits
 
