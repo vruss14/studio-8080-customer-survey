@@ -1,6 +1,6 @@
 /* Multiple background images result in a tinted background */
 /* Background should not repeat, cover the full viewport, and be centered */
-
+/* Background image by Nataliya Vaitkevich from Pexels  */
 body::before {
     background: white;
     background-image: linear-gradient(
